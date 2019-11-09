@@ -14,7 +14,7 @@ function PrivateRoute(props) {
             if(localStorage.getItem("token")){
                 return <Component {...renderProps} />
             }else {
-                <Redirect to="Login"/>
+               return  <Redirect to="Login"/>
             }
 
         }}/>
